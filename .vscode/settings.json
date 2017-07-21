@@ -1,0 +1,36 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontSize": 14,
+    "workbench.editor.showIcons": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/*.ngfactory.*": true,
+        "**/*.ngsummary.*": true,
+        "**/*.shim.ngstyle.*": true,
+        "**/*.js.map": true,
+        ".metadata/**": true,
+        "RemoteSystemsTempFiles/**": true,
+        ".recommenders/**": true,
+        ".vscode/**": true,
+        "npm-debug*": true,
+        "dos*": true,
+        "atom*": true
+    },
+    "editor.formatOnType": true,
+    "typescript.check.tscVersion": false,
+    "files.associations": {
+        "*.sql": "pgsql",
+        "*.conf": "NGINX",
+        "*.scss": "scss"
+    },
+    "editor.renderIndentGuides": true,
+    "nextgenas.sdk.editor": "/opt/flex_sdks/default",
+    "window.zoomLevel": 0,
+    "emmet.useNewEmmet": true,
+    "editor.dragAndDrop": false,
+    "editor.autoIndent": true
+}
