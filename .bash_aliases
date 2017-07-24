@@ -66,7 +66,6 @@ function fc_add_wow(){
 }
 
 alias wow=fc_wow
-. ~/.bash_wow_aliases
 
 alias getLastTag=fc_get_last_tag
 alias getlasttag=fc_get_last_tag
@@ -91,3 +90,8 @@ alias achar_arquivo='find . | grep $1'
 alias workspace='cd ~/workspace'
 alias catalias='cat ~/.bash_aliases'
 alias addwow='fc_add_wow'
+alias dotfiles='cd ~/workspace/dotfiles'
+
+
+. ~/.bash_wow_aliases
+. ~/.bash_work_aliases
