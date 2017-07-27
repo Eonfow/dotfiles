@@ -50,6 +50,11 @@ function fc_wow() {
   git status || ls
 }
 
+function fc_new_branch() {
+  git checkout -b $1
+  git push -u origin $1
+}
+
 function fc_program_is_runnig(){
   command=$1
   running=$(ps ax | grep -v grep | grep $command | wc -l)
