@@ -2,6 +2,8 @@
 {
     "editor.fontSize": 14,
     "workbench.editor.showIcons": false,
+    "window.restoreWindows": "all",
+    "files.hotExit": "onExitAndWindowClose",
     "files.exclude": {
         "**/.git": true,
         "**/.DS_Store": true,
@@ -21,7 +23,6 @@
         "atom*": true
     },
     "editor.formatOnType": true,
-    "typescript.check.tscVersion": false,
     "files.associations": {
         "*.sql": "pgsql",
         "*.conf": "NGINX",
@@ -30,7 +31,7 @@
     "editor.renderIndentGuides": true,
     "nextgenas.sdk.editor": "/opt/flex_sdks/default",
     "window.zoomLevel": 0,
-    "emmet.useNewEmmet": true,
     "editor.dragAndDrop": false,
-    "editor.autoIndent": true
+    "editor.autoIndent": true,
+    "workbench.startupEditor": "newUntitledFile"
 }
