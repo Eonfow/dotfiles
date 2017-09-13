@@ -56,8 +56,8 @@ function fc_new_branch() {
 }
 
 function fc_program_is_runnig(){
-  command=$1
-  running=$(ps ax | grep -v grep | grep $command | wc -l)
+  command=$*
+  running=$(ps ax | grep -v grep | grep "$command" | wc -l)
   if [ "$running" -gt 0 ]; then
       echo "1"
   else
@@ -67,7 +67,7 @@ function fc_program_is_runnig(){
 
 function fc_add_wow(){
   echo "alias $1='wow'" >> ~/.bash_wow_aliases
-  updatealias
+  source ~/.bash_wow_aliases
 }
 
 alias wow=fc_wow
