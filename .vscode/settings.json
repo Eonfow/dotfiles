@@ -33,5 +33,17 @@
     "window.zoomLevel": 0,
     "editor.dragAndDrop": false,
     "editor.autoIndent": true,
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "[typescript]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "[html]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "[scss]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    }
 }
