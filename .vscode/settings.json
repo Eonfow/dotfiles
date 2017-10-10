@@ -14,13 +14,16 @@
         "**/*.ngsummary.*": true,
         "**/*.shim.ngstyle.*": true,
         "**/*.js.map": true,
+        "**/*.chunk.js": true,
+        "**/*.bundle.js": true,
         ".metadata/**": true,
         "RemoteSystemsTempFiles/**": true,
         ".recommenders/**": true,
         ".vscode/**": true,
         "npm-debug*": true,
         "dos*": true,
-        "atom*": true
+        "atom*": true,
+        ".*": true
     },
     "editor.formatOnType": true,
     "files.associations": {
