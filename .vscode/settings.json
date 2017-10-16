@@ -48,5 +48,7 @@
     "[scss]": {
         "editor.tabSize": 4,
         "editor.insertSpaces": false
-    }
+    },
+    "extensions.ignoreRecommendations": false,
+    "java.errors.incompleteClasspath.severity": "ignore"
 }
