@@ -1,6 +1,11 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
     "editor.fontSize": 14,
+    "editor.wordWrap": "off",
+    "editor.wordWrapColumn": 130,
+    "editor.wrappingIndent": "indent",
     "workbench.editor.showIcons": false,
     "window.restoreWindows": "all",
     "files.hotExit": "onExitAndWindowClose",
@@ -25,7 +30,6 @@
         "atom*": true,
         ".*": true
     },
-    "editor.formatOnType": true,
     "files.associations": {
         "*.sql": "pgsql",
         "*.conf": "NGINX",
