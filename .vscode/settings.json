@@ -1,7 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
     "editor.formatOnType": true,
-    "editor.formatOnPaste": true,
     "editor.fontSize": 14,
     "editor.wordWrap": "off",
     "editor.wordWrapColumn": 130,
@@ -21,6 +20,7 @@
         "**/*.js.map": true,
         "**/*.chunk.js": true,
         "**/*.bundle.js": true,
+        "**/*.class": true,
         ".metadata/**": true,
         "RemoteSystemsTempFiles/**": true,
         ".recommenders/**": true,
