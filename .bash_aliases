@@ -22,20 +22,24 @@ function fc_tag_git() {
 }
 
 function fc_un_tag(){
-  echo git pull
+  echo "git pull"
   git pull
-  echo git push
+  echo "git push"
   git push
+  echo "git tag -d $1"
   git tag -d $1
+  echo "git push origin :refs/tags/$1"
   git push origin :refs/tags/$1
 }
 
 function fc_re_tag(){
-  echo git pull
+  echo "git pull"
   git pull
-  echo git push
-  git push  
+  echo "git push"
+  git push
+  echo "git tag -f $1"
   git tag -f $1
+  echo "git push -f origin $1"
   git push -f origin $1
 }
 
@@ -96,7 +100,11 @@ alias workspace='cd ~/workspace'
 alias catalias='cat ~/.bash_aliases'
 alias addwow='fc_add_wow'
 alias dotfiles='cd ~/workspace/dotfiles'
+alias wgit='git'
 
-
-. ~/.bash_wow_aliases
-. ~/.bash_work_aliases
+if [ -f ~/.bash_wow_aliases ]; then
+    . ~/.bash_wow_aliases
+fi
+if [ -f ~/.bash_work_aliases ]; then
+    . ~/.bash_work_aliases
+fi
