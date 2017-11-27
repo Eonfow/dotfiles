@@ -70,8 +70,13 @@ function fc_program_is_runnig(){
 }
 
 function fc_add_wow(){
-  echo "alias $1='wow'" >> ~/.bash_wow_aliases
-  source ~/.bash_wow_aliases
+  if [[ ! -z "$1" ]]
+  then
+    echo "alias $1='wow'" >> ~/.bash_wow_aliases
+    source ~/.bash_wow_aliases
+  else
+    echo "wow vazio"
+  fi
 }
 
 alias wow=fc_wow
