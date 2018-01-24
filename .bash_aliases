@@ -105,7 +105,11 @@ alias workspace='cd ~/workspace'
 alias catalias='cat ~/.bash_aliases'
 alias addwow='fc_add_wow'
 alias dotfiles='cd ~/workspace/dotfiles'
+alias gti='git'
+alias igt='git'
 alias wgit='git'
+alias wgti='git'
+alias wigt='git'
 
 if [ -f ~/.bash_wow_aliases ]; then
     . ~/.bash_wow_aliases
