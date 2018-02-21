@@ -33,7 +33,8 @@
     "files.associations": {
         "*.sql": "pgsql",
         "*.conf": "NGINX",
-        "*.scss": "scss"
+        "*.scss": "scss",
+        ".bash_work_aliases": "bat"
     },
     "editor.renderIndentGuides": true,
     "nextgenas.sdk.editor": "/opt/flex_sdks/default",
