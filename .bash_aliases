@@ -110,6 +110,7 @@ alias igt='git'
 alias wgit='git'
 alias wgti='git'
 alias wigt='git'
+alias editworkaliases='code ~/.bash_work_aliases'
 
 if [ -f ~/.bash_wow_aliases ]; then
     . ~/.bash_wow_aliases
