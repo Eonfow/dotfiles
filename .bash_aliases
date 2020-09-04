@@ -43,6 +43,21 @@ function fc_re_tag(){
   git push -f origin $1
 }
 
+function fc_staging(){
+  echo "git checkout $1"
+  git checkout $1
+  echo "git pull"
+  git pull
+  echo "git branch -D $1-staging"
+  git branch -D $1-staging
+  echo "git checkout -b $1-staging"
+  git checkout -b $1-staging
+  echo "git pull origin staging"
+  git pull origin staging
+  echo "git push -u origin $1-staging --force"
+  git push -u origin $1-staging --force
+}
+
 function fc_get_present_branch() {
     HEAD = cat .\.git\HEAD
     SPLIT = $HEAD | tr 'refs/heads/' '\n'
@@ -81,6 +96,7 @@ function fc_add_wow(){
 
 alias wow=fc_wow
 
+alias staging=fc_staging
 alias getLastTag=fc_get_last_tag
 alias getlasttag=fc_get_last_tag
 alias updatealias='source ~/.bash_aliases'
